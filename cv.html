@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shadrack Maingi | CV</title>
+  <style>
+    :root {
+      --bg: #08131f;
+      --card: #f3f6f9;
+      --text: #132238;
+      --muted: #475569;
+      --primary: #0ea5e9;
+      --accent: #1d4ed8;
+      --line: #d9e2ec;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: linear-gradient(135deg, #07111f, #11263c);
+      color: var(--text);
+      padding: 36px 18px;
+    }
+
+    .page {
+      max-width: 980px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(0,0,0,0.18);
+      overflow: hidden;
+    }
+
+    .header {
+      background: linear-gradient(135deg, #0f172a, #0ea5e9);
+      color: white;
+      padding: 32px 42px;
+    }
+
+    .header h1 {
+      margin: 0 0 8px;
+      font-size: clamp(2rem, 3vw, 3rem);
+    }
+
+    .header p {
+      margin: 4px 0;
+      opacity: 0.95;
+    }
+
+    .content {
+      padding: 30px 42px 42px;
+    }
+
+    .section {
+      margin-bottom: 26px;
+    }
+
+    h2 {
+      margin: 0 0 14px;
+      font-size: 1.3rem;
+      color: var(--accent);
+      border-bottom: 2px solid var(--line);
+      padding-bottom: 8px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1.1fr 1.4fr;
+      gap: 24px;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 18px;
+      line-height: 1.8;
+      color: var(--muted);
+    }
+
+    .meta {
+      color: var(--muted);
+      line-height: 1.8;
+    }
+
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 8px;
+    }
+
+    .tag {
+      background: #e0f2fe;
+      border: 1px solid #bae6fd;
+      color: #0f172a;
+      padding: 7px 12px;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+
+    .small {
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+
+    @media (max-width: 700px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+      .header, .content {
+        padding-left: 22px;
+        padding-right: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="header">
+      <h1>Shadrack Maingi</h1>
+      <p>Computer Science Student | Cybersecurity Enthusiast | SOC Analyst</p>
+      <p>maingishadrack39@gmail.com | 0112467740 | Kenya</p>
+    </header>
+
+    <div class="content">
+      <section class="section">
+        <h2>Profile</h2>
+        <p class="small">
+          Cybersecurity-focused computer science student with practical experience in ethical hacking, ICT support, network security, and data analytics. Skilled in vulnerability assessment, threat analysis, network troubleshooting, and technical documentation, with a strong interest in SOC operations and incident response.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>Experience</h2>
+        <div class="grid">
+          <div>
+            <strong>Cyber Security & Ethical Hacking</strong><br>
+            <span class="small">Cryptonic Area</span><br>
+            <span class="small">Jul 2026 – Present</span>
+          </div>
+          <div class="meta">
+            Worked on a project-based virtual internship covering ethical hacking, network security, vulnerability assessment, and threat analysis. Strengthened technical, analytical, and problem-solving skills critical for cybersecurity and SOC roles.
+          </div>
+        </div>
+
+        <div class="grid" style="margin-top: 18px;">
+          <div>
+            <strong>ICT Officer I</strong><br>
+            <span class="small">Kenya School of Government</span><br>
+            <span class="small">May 2026 – Sep 2026</span>
+          </div>
+          <div class="meta">
+            Supported information security measures, monitored security events, assisted in vulnerability assessments, and performed user account management, troubleshooting, and audit support tasks in a government ICT environment.
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Education</h2>
+        <div class="grid">
+          <div>
+            <strong>BSc in Computer Science</strong><br>
+            <span class="small">Murang'a University of Technology</span><br>
+            <span class="small">Current</span>
+          </div>
+          <div class="meta">
+            Studying computer science with emphasis on networking, security principles, systems support, and technical project work.
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Certifications & Training</h2>
+        <ul>
+          <li>Cisco Networking Academy – Computer Hardware Basics</li>
+          <li>Cisco Networking Academy – Networking Basics</li>
+          <li>Cisco Networking Academy – Introduction to Cybersecurity</li>
+          <li>Cisco Networking Academy – JavaScript Essentials 2</li>
+          <li>ICT Authority Kenya – Data Analytics Training</li>
+          <li>Google Cloud Skills – Chronicle SOAR Analyst</li>
+          <li>Cryptonic Area – Cyber Security & Ethical Hacking Internship</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>Skills</h2>
+        <div class="tag-list">
+          <span class="tag">Cybersecurity</span>
+          <span class="tag">Ethical Hacking</span>
+          <span class="tag">Threat Analysis</span>
+          <span class="tag">Vulnerability Assessment</span>
+          <span class="tag">Network Security</span>
+          <span class="tag">Network Reconnaissance</span>
+          <span class="tag">Incident Management</span>
+          <span class="tag">Linux</span>
+          <span class="tag">Windows</span>
+          <span class="tag">Cisco Packet Tracer</span>
+          <span class="tag">Power BI</span>
+          <span class="tag">Business Intelligence</span>
+          <span class="tag">Data Cleaning</span>
+          <span class="tag">Reporting</span>
+        </div>
+      </section>
+    </div>
+  </div>
+</body>
+</html>
