@@ -139,8 +139,6 @@ img {
     border-radius: 28px;
     border: 2px solid rgba(56, 189, 248, 0.4);
     box-shadow: var(--shadow);
-    background: linear-gradient(135deg, rgba(14,165,233,0.24), rgba(139,92,246,0.2));
-    padding: 0.6rem;
 }
 
 .profile-art {
@@ -149,34 +147,8 @@ img {
     justify-content: center;
     font-size: clamp(5rem, 10vw, 9rem);
     font-weight: 800;
-    letter-spacing: -0.08em;
     color: #e2f3ff;
-    text-shadow: 0 0 18px rgba(56, 189, 248, 0.5);
-    background:
-        radial-gradient(circle at 30% 30%, rgba(14,165,233,0.55), transparent 25%),
-        linear-gradient(135deg, rgba(7,17,31,0.96), rgba(14,165,233,0.3), rgba(139,92,246,0.28));
-    border: 1px solid rgba(125, 211, 252, 0.5);
-    position: relative;
-    overflow: hidden;
-}
-
-.profile-art::before,
-.profile-art::after {
-    content: "";
-    position: absolute;
-    inset: 14px;
-    border: 1px solid rgba(125, 211, 252, 0.25);
-    border-radius: 22px;
-}
-
-.profile-art::after {
-    inset: 28px;
-    border-color: rgba(191, 219, 254, 0.22);
-}
-
-.profile-art span {
-    position: relative;
-    z-index: 1;
+    background: linear-gradient(135deg, rgba(7, 17, 31, 0.96), rgba(14, 165, 233, 0.3));
 }
 
 .hero-copy {
@@ -499,6 +471,19 @@ section {
     margin-top: 0.75rem;
 }
 
+.verify-link {
+    color: #fbbf24;
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: rgba(251, 191, 36, 0.55);
+    text-underline-offset: 3px;
+}
+
+.verify-link:hover,
+.verify-link:focus-visible {
+    color: #fde68a;
+}
+
 .skill-wrap {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -593,9 +578,55 @@ section {
 
 .contact-list li {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 0.8rem;
     color: var(--text-soft);
+}
+
+.contact-list li > i {
+    flex: 0 0 1.1rem;
+    margin-top: 0.2rem;
+    text-align: center;
+}
+
+.phone-contact {
+    display: grid;
+    gap: 0.5rem;
+}
+
+.phone-number {
+    width: fit-content;
+    color: var(--text-soft);
+    font-weight: 600;
+}
+
+.phone-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.phone-actions a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.25rem 0.55rem;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    color: var(--text-soft);
+    font-size: 0.8rem;
+}
+
+.phone-actions a:hover,
+.phone-actions a:focus-visible,
+.phone-number:hover,
+.phone-number:focus-visible {
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+.phone-actions a:last-child i {
+    color: #4ade80;
 }
 
 .contact-list i {
